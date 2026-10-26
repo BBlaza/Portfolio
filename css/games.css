@@ -1,0 +1,238 @@
+/* Games listing: shared cards and contact markup retain their own page styles. */
+.games-page .project-tab {
+	background-image: none;
+	filter: drop-shadow(10px 30px 5px rgba(0, 0, 0, 0.5));
+}
+
+.games-page .project-tab::before {
+	content: "";
+	position: absolute;
+	inset: 4.98% 0 52.87% 21.25%;
+	border-radius: 15px;
+	background-color: var(--color-warm-gray);
+	z-index: -2;
+}
+
+.games-page .project-tab::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: url("../assets/images/games/folder.svg") no-repeat center / 100% 100%;
+	z-index: -1;
+}
+
+.games-page .project-tab-title {
+	top: 4.98%;
+	left: 21.25%;
+	width: 78.75%;
+	font-size: 40px;
+	line-height: normal;
+}
+
+.games-page .project-tab-preview {
+	height: auto;
+	aspect-ratio: 2880 / 1800;
+}
+
+.game-description {
+	margin: 0;
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.game-line {
+	position: absolute;
+	pointer-events: none;
+}
+
+@media (min-width: 1101px) {
+	.games-page .navbar {
+		height: 80px;
+	}
+
+	.games-page .main-page {
+		background-size: 100% calc(100% + 418px);
+	}
+
+	.games-content {
+		height: 1845px;
+	}
+
+	.games-content::before {
+		inset: auto;
+		left: calc((100% - var(--desktop-design-width)) / 2 + 282px);
+		top: 1469px;
+		width: 1835.1px;
+		height: 1513px;
+		background: url("../assets/images/projects/tippys-cafe/glow.svg") no-repeat;
+	}
+
+	.game-entry {
+		position: absolute;
+		left: calc((100% - var(--desktop-design-width)) / 2);
+		width: var(--desktop-design-width);
+		height: 285px;
+	}
+
+	.game-entry .project-tab {
+		position: absolute;
+		left: 100px;
+		width: var(--project-image-width);
+	}
+
+	.game-description {
+		position: absolute;
+		top: 94px;
+		left: 625px;
+		width: var(--project-text-width);
+	}
+
+	.game-entry-1 {
+		top: 38px;
+	}
+
+	.game-entry-2 {
+		top: 625px;
+	}
+
+	.game-entry-2 .project-tab {
+		left: 940px;
+	}
+
+	.game-entry-2 .game-description {
+		left: 205px;
+	}
+
+	.game-entry-3 {
+		top: 1213px;
+	}
+
+	.game-entry-3 .project-tab {
+		left: 112px;
+	}
+
+	.game-entry-3 .game-description {
+		top: 77px;
+		left: 627px;
+		width: 608px;
+	}
+
+	.game-line {
+		top: 283px;
+		left: 414.5px;
+	}
+
+	.game-entry-2 .game-line {
+		top: 283.5px;
+		left: -49px;
+		transform: scaleX(-1);
+	}
+
+	.game-entry-3 .game-line {
+		top: 283.5px;
+		left: 520px;
+	}
+
+	.games-page .contact-content {
+		position: relative;
+		height: 418px;
+		padding-top: 28px;
+	}
+
+	.games-page .contact-title {
+		font-size: 64px;
+		line-height: normal;
+	}
+
+	.games-page .contact-description {
+		position: absolute;
+		top: 105px;
+		max-width: none;
+		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.games-page .contact-email {
+		position: absolute;
+		top: 199px;
+		font-size: 64px;
+		color: var(--color-royal-blue);
+	}
+
+	.games-page .contact-copyright {
+		position: absolute;
+		top: 314px;
+		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.games-content {
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+		padding: 48px 24px 120px;
+	}
+
+	.game-entry {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		gap: 32px;
+		align-items: center;
+	}
+
+	.games-page .project-tab-title {
+		font-size: clamp(20px, 3.5vw, 36px);
+	}
+
+	.game-description {
+		font-size: 28px;
+		line-height: 1.25;
+	}
+
+	.game-entry-2 .project-tab {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.game-entry-2 .game-description {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.game-line {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.games-content {
+		gap: 64px;
+		padding: 32px 16px 80px;
+	}
+
+	.game-entry {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 24px;
+	}
+
+	.game-entry .project-tab {
+		max-width: var(--project-image-width);
+		margin: 0 auto;
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.game-entry .game-description {
+		grid-column: auto;
+		grid-row: auto;
+		font-size: 24px;
+	}
+
+	.games-page .project-tab-title {
+		font-size: clamp(20px, 6vw, 32px);
+	}
+}
