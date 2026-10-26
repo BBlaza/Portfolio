@@ -1,0 +1,41 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Main navigation" [ref=e3]:
+      - generic [ref=e4]:
+        - link "Home" [ref=e5] [cursor=pointer]:
+          - /url: index.html
+        - link "Games" [ref=e6] [cursor=pointer]:
+          - /url: games.html
+        - link "Design" [ref=e7] [cursor=pointer]:
+          - /url: design.html
+        - link "Experience" [ref=e8] [cursor=pointer]:
+          - /url: experiences.html
+    - main [ref=e9]:
+      - heading "Experience" [level=1] [ref=e12]
+      - generic [ref=e13]:
+        - region "Colibri Technologies experience" [ref=e14]:
+          - generic [ref=e15]:
+            - paragraph [ref=e16]: Developed Modbus-based hardware control APIs for industrial scanners and motors, enabling software-driven device commands and status communication.
+            - paragraph [ref=e17]: Built a testing interface integrating custom hardware APIs, enabling users to operate and validate machine functions without direct hardware programming.
+          - generic [ref=e18]:
+            - link "Colibri Technologies Co. Ltd. on LinkedIn" [ref=e19] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/colibritech/
+              - img "Colibri Technologies logo" [ref=e20]
+            - paragraph [ref=e21]: Shenzhen Colibri Technologies Co., Ltd mainly engage in R&D, production, sales and technical service of automation equipment as well as precision parts manufacturing.
+        - region "Sunday Studios Games experience" [ref=e22]:
+          - generic [ref=e23]:
+            - paragraph [ref=e24]: Developed an interactive spill-cleaning minigame in Godot using pixel-level image manipulation and collision detection, with real-time progress tracking and completion-state logic.
+            - paragraph [ref=e25]: Built a state-driven tutorial system coordinating UI prompts, player interactions, and progression logic to guide users through core gameplay mechanics.
+            - paragraph [ref=e26]: Refined the "throwing trash" mechanic and its visual presentation by using an X-ray effect to highlight key elements, enhancing the visuals with special effects, and incorporating cartoon-style animations.
+          - generic [ref=e27]:
+            - link "Sunday Studios Games on LinkedIn" [ref=e28] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/sunday-studios-games/posts/?feedView=all
+              - img "Sunday Studios Games logo" [ref=e29]
+            - paragraph [ref=e30]: An independent game studio composed of students from around the world
+  - contentinfo [ref=e31]:
+    - generic [ref=e32]:
+      - heading "Contact" [level=2] [ref=e33]
+      - paragraph [ref=e34]: I'm open to Gameplay Engineer, Front-end Developer, Game Developer Intern, and Technical Designer Intern. Email is the fastest way to reach me.
+      - link "jjia@ufl.edu" [ref=e35] [cursor=pointer]:
+        - /url: mailto:jjia@ufl.edu
+      - paragraph [ref=e36]: ©2026 Juncheng Jia
