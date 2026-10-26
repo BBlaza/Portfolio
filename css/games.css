@@ -46,10 +46,6 @@
 }
 
 @media (min-width: 1101px) {
-	.games-page .navbar {
-		height: 80px;
-	}
-
 	.games-page .main-page {
 		background-size: 100% calc(100% + 418px);
 	}

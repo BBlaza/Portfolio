@@ -228,10 +228,6 @@
 }
 
 @media (min-width: 1101px) {
-	.tippys-cafe-page .navbar {
-		height: 80px;
-	}
-
 	.tippys-cafe-page .main-page {
 		background-size: 100% calc(100% + 418px);
 	}
