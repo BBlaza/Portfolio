@@ -398,6 +398,11 @@ main::before {
 	transform: translateY(-8px);
 }
 
+.project-tab:focus-visible {
+	outline: 3px solid var(--color-white);
+	outline-offset: 4px;
+}
+
 .project-tab-title {
 	position: absolute;
 	top: 10%;
