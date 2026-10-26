@@ -13,7 +13,6 @@
 	--color-warm-gray: #BEBABA;
 	--color-light-gray: #D9D9D9;
 	--color-glow-blue: #4C8BD1;
-	--color-glow-purple: #2924B5;
 
 	/* Shared Typography */
 	--font-primary: "Jockey One", sans-serif;
@@ -23,6 +22,9 @@
 	--content-max-width: 1240px;
 	--content-gutter: 48px;
 	--mobile-gutter: 32px;
+
+	/* Shared Effects */
+	--glow-opacity: 75%;
 }
 
 /* ========================================
@@ -76,22 +78,25 @@ main {
 main::before {
 	content: "";
 	position: absolute;
+	inset: 0;
 
-	right: -10%;
-	bottom: -8%;
+	background-image:
+		radial-gradient(
+			circle 550px at 15% 70%,
+			color-mix(in srgb, var(--color-glow-blue) var(--glow-opacity), transparent) 0%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 600px at 50% 85%,
+			color-mix(in srgb, var(--color-royal-blue) var(--glow-opacity), transparent) 0%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 550px at 85% 95%,
+			color-mix(in srgb, var(--color-glow-blue) var(--glow-opacity), transparent) 0%,
+			transparent 100%
+		);
 
-	width: 75%;
-	height: 55%;
-
-	background: radial-gradient(
-		ellipse at center,
-		var(--color-glow-blue) 0%,
-		var(--color-glow-blue) 42%,
-		var(--color-glow-purple) 58%,
-		rgba(41, 36, 181, 0) 78%
-	);
-
-	filter: blur(35px);
 	z-index: -1;
 	pointer-events: none;
 }
@@ -126,7 +131,7 @@ main::before {
 
 .navbar {
 	width: 100%;
-	height: 119px;
+	height: 80px;
 
 	background-color: var(--color-light-gray);
 
@@ -156,7 +161,7 @@ main::before {
 
 	width: 190px;
 
-	font-size: 40px;
+	font-size: 25px;
 	font-weight: 400;
 	font-style: normal;
 	line-height: normal;
@@ -235,11 +240,11 @@ main::before {
 		)
 	);
 
-	width: 666px;
-	height: 280px;
+	width: 500px;
+	height: 200px;
 	margin: 0;
 
-	font-size: 200px;
+	font-size: 150px;
 	font-weight: 400;
 	line-height: normal;
 
@@ -252,7 +257,7 @@ main::before {
 .hero-line {
 	position: absolute;
 
-	top: 283.5px;
+	top: 230px;
 	left: max(
 		16px,
 		calc(
@@ -278,7 +283,7 @@ main::before {
 .hero-description {
 	position: absolute;
 
-	top: 297px;
+	top: 270px;
 	right: max(
 		24px,
 		calc(
@@ -423,26 +428,6 @@ main::before {
 	background: #e8e8e8;
 	color: #555;
 	font-size: clamp(10px, 1.3vw, 16px);
-}
-
-@media (max-width: 900px) {
-	.projects {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		margin-top: 0;
-	}
-	.project-tab-title {
-		font-size: clamp(12px, 3vw, 38px);
-	}
-}
-
-@media (max-width: 600px) {
-	.projects {
-		grid-template-columns: 1fr;
-		width: min(400px, calc(100% - var(--mobile-gutter)));
-	}
-	.project-tab-title {
-		font-size: clamp(24px, 8vw, 38px);
-	}
 }
 
 /* ========================================
