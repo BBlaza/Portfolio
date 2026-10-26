@@ -214,3 +214,171 @@
 		order: 2;
 	}
 }
+
+/* ========================================
+	Tippy's Cafe
+======================================== */
+
+.tippys-cafe-page .project-feature-text p {
+	margin: 0;
+}
+
+.tippys-cafe-page .tippys-trash .project-feature-image {
+	border-radius: 0;
+}
+
+@media (min-width: 1101px) {
+	.tippys-cafe-page .navbar {
+		height: 80px;
+	}
+
+	.tippys-cafe-page .main-page {
+		background-size: 100% calc(100% + 418px);
+	}
+
+	.tippys-cafe-page .content-background::before {
+		inset: auto;
+		left: calc((100% - var(--desktop-design-width)) / 2 + 385px);
+		top: 1643px;
+		width: 1835.096px;
+		height: 1513px;
+		background: url("../assets/images/projects/tippys-cafe/glow.svg") no-repeat;
+	}
+
+	.tippys-cafe-page .project-header {
+		height: 574px;
+	}
+
+	.tippys-cafe-page .project-title {
+		top: 32px;
+		line-height: normal;
+	}
+
+	.tippys-cafe-page .project-subtitle {
+		top: 232px;
+		width: 715px;
+	}
+
+	.tippys-cafe-page .project-header-line {
+		top: 109.5px;
+		left: calc((100% - var(--desktop-design-width)) / 2 - 138px);
+		height: 103px;
+	}
+
+	.tippys-cafe-page .project-features {
+		width: 1070px;
+		gap: 0;
+		padding-bottom: 127px;
+	}
+
+	.tippys-cafe-page .project-feature {
+		width: 1030px;
+		margin-left: 20px;
+		gap: 20px;
+		align-items: start;
+	}
+
+	.tippys-cafe-page .project-feature-text {
+		font-size: 36px;
+	}
+
+	.tippys-cafe-page .tippys-cleaning {
+		min-height: 316px;
+		margin-bottom: 94px;
+	}
+
+	.tippys-cafe-page .tippys-tutorial {
+		min-height: 299px;
+		margin-bottom: 135px;
+	}
+
+	.tippys-cafe-page .tippys-trash {
+		width: 1050px;
+		min-height: 319px;
+		margin-left: 0;
+		grid-template-columns: minmax(0, 525px) minmax(0, 505px);
+	}
+
+	.tippys-cafe-page .tippys-trash .project-feature-image {
+		margin-top: 4px;
+	}
+
+	.tippys-cafe-page .project-feature-image {
+		aspect-ratio: 400 / 250;
+		object-fit: cover;
+	}
+
+	.tippys-cafe-page .tippys-trash .project-feature-image {
+		aspect-ratio: 505 / 315;
+	}
+
+	.tippys-cafe-page .contact-content {
+		position: relative;
+		height: 418px;
+		padding: 28px 0 0;
+	}
+
+	.tippys-cafe-page .contact-title {
+		font-size: 64px;
+		line-height: normal;
+	}
+
+	.tippys-cafe-page .contact-description {
+		position: absolute;
+		top: 105px;
+		max-width: none;
+		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.tippys-cafe-page .contact-email {
+		position: absolute;
+		top: 199px;
+		font-size: 64px;
+		color: var(--color-royal-blue);
+	}
+
+	.tippys-cafe-page .contact-copyright {
+		position: absolute;
+		top: 314px;
+		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.tippys-cafe-page .project-header {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		height: auto;
+		padding: 80px 24px 100px;
+	}
+
+	.tippys-cafe-page .project-header-line {
+		display: none;
+	}
+
+	.tippys-cafe-page .project-title {
+		position: static;
+		font-size: clamp(48px, 10vw, 100px);
+		overflow-wrap: anywhere;
+	}
+
+	.tippys-cafe-page .project-subtitle {
+		position: static;
+		width: min(715px, 100%);
+	}
+}
+
+@media (max-width: 600px) {
+	.tippys-cafe-page .project-header {
+		padding: 60px 16px 80px;
+	}
+
+	.tippys-cafe-page .project-title {
+		font-size: clamp(48px, 12vw, 72px);
+	}
+}

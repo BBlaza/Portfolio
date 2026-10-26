@@ -49,3 +49,14 @@ This is a personal portfolio website showcasing game development, software engin
 - Do not overwrite unrelated user changes.
 - Do not commit or push to Git unless explicitly requested.
 - Ask before deleting files or making major structural changes.
+
+## Browser Verification
+
+- Use Playwright MCP to inspect rendered webpages when available.
+- Serve the website using a local HTTP server.
+- Compare desktop screenshots against Figma designs.
+- Test responsive layouts at 1440px, 768px, and 390px.
+- Check for console errors and failed asset requests.
+- Verify that shared CSS changes do not break existing pages.
+- Do not claim visual verification if browser tools are unavailable.
+- Do not commit or push changes without permission.
