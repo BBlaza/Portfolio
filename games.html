@@ -13,18 +13,12 @@
 
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/games.css">
+	<script src="script.js" defer></script>
 </head>
 
 <body class="games-page">
 	<div class="main-page">
-		<nav class="navbar" aria-label="Main navigation">
-			<div class="nav-content">
-				<a href="index.html">Home</a>
-				<a href="games.html" class="active" aria-current="page">Games</a>
-				<a href="design.html">Design</a>
-				<a href="experiences.html">Experience</a>
-			</div>
-		</nav>
+		<nav class="navbar" aria-label="Main navigation" data-navigation="games.html"></nav>
 		<main class="content-background games-content" aria-label="Games projects">
 			<article class="game-entry game-entry-1">
 				<a class="project-tab" href="projects/sketchpad.html" aria-labelledby="sketchpad-title">
@@ -53,25 +47,7 @@
 		</main>
 	</div>
 
-	<footer class="contact" id="contact">
-		<div class="contact-content">
-			<h2 class="contact-title">Contact</h2>
-
-			<p class="contact-description">
-				I'm open to Gameplay Engineer, Front-end Developer,
-				Game Developer Intern, and Technical Designer Intern.
-				Email is the fastest way to reach me.
-			</p>
-
-			<a class="contact-email" href="mailto:jjia@ufl.edu">
-				jjia@ufl.edu
-			</a>
-
-			<p class="contact-copyright">
-				©2026 Juncheng Jia
-			</p>
-		</div>
-	</footer>
+	<footer class="contact" id="contact" data-contact></footer>
 
 </body>
 </html>

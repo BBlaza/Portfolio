@@ -58,19 +58,6 @@
 }
 
 @media (min-width: 1101px) {
-	.experiences-page .main-page {
-		background-size: 100% calc(100% + 418px);
-	}
-
-	.experiences-page .content-background::before {
-		inset: auto;
-		left: calc((100% - var(--desktop-design-width)) / 2 + 385px);
-		top: 1616px;
-		width: 1835.1px;
-		height: 1513px;
-		background: url("../assets/images/projects/tippys-cafe/glow.svg") no-repeat;
-	}
-
 	.experiences-page .project-header {
 		height: 428px;
 	}
@@ -106,41 +93,6 @@
 
 	.experience-entry:last-child {
 		min-height: 799px;
-	}
-
-	.experiences-page .contact-content {
-		position: relative;
-		height: 418px;
-		padding-top: 28px;
-	}
-
-	.experiences-page .contact-title {
-		font-size: 64px;
-		line-height: normal;
-	}
-
-	.experiences-page .contact-description {
-		position: absolute;
-		top: 105px;
-		max-width: none;
-		margin: 0;
-		font-size: 32px;
-		line-height: 40px;
-	}
-
-	.experiences-page .contact-email {
-		position: absolute;
-		top: 199px;
-		font-size: 64px;
-		color: var(--color-royal-blue);
-	}
-
-	.experiences-page .contact-copyright {
-		position: absolute;
-		top: 314px;
-		margin: 0;
-		font-size: 32px;
-		line-height: 40px;
 	}
 }
 

@@ -22,6 +22,7 @@
 	--content-max-width: 1240px;
 	--content-gutter: 48px;
 	--mobile-gutter: 32px;
+	--contact-desktop-height: 418px;
 
 	/* Shared Effects */
 	--glow-opacity: 75%;
@@ -52,6 +53,10 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+.desktop-break {
+	display: none;
 }
 
 /* ========================================
@@ -191,15 +196,6 @@ a {
 	overflow: visible;
 }
 
-.hero-line path {
-	fill: none;
-	stroke: var(--color-warm-gray);
-	stroke-width: 3px;
-	stroke-linecap: butt;
-	stroke-linejoin: miter;
-	vector-effect: non-scaling-stroke;
-}
-
 .hero-description {
 	position: absolute;
 
@@ -301,11 +297,28 @@ a {
 	position: relative;
 	width: 100%;
 	aspect-ratio: 400 / 285;
-	background-image: url("assets/icons/folder-tab.svg");
+	background-image: none;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	filter: drop-shadow(10px 30px 10px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(10px 30px 5px rgba(0, 0, 0, 0.5));
 	transition: transform 0.2s ease;
+}
+
+.project-tab::before {
+	content: "";
+	position: absolute;
+	inset: 4.98% 0 52.87% 21.25%;
+	border-radius: 15px;
+	background-color: var(--color-warm-gray);
+	z-index: -2;
+}
+
+.project-tab::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: url("assets/images/games/folder.svg") no-repeat center / 100% 100%;
+	z-index: -1;
 }
 
 .project-tab:hover {
@@ -319,14 +332,14 @@ a {
 
 .project-tab-title {
 	position: absolute;
-	top: 10%;
-	left: 39%;
-	width: 56%;
+	top: 4.98%;
+	left: 21.25%;
+	width: 78.75%;
 	margin: 0;
 	color: var(--color-black);
-	font-size: clamp(12px, 2.5vw, 38px);
+	font-size: 40px;
 	font-weight: 400;
-	line-height: 1;
+	line-height: normal;
 	text-align: center;
 	white-space: nowrap;
 }
@@ -336,7 +349,8 @@ a {
 	left: 11.75%;
 	top: 29.12%;
 	width: 76.5%;
-	height: 67.02%;
+	height: auto;
+	aspect-ratio: 2880 / 1800;
 	border-radius: 10px;
 	display: block;
 	object-fit: cover;
@@ -710,5 +724,120 @@ a {
 
 	.contact-copyright {
 		font-size: 14px;
+	}
+}
+
+/* Desktop layout and shared contact component. */
+@media (min-width: 1101px) {
+	.desktop-break {
+		display: block;
+	}
+
+	.contact-content {
+		position: relative;
+		height: var(--contact-desktop-height);
+		padding: 28px 0 0;
+	}
+
+	.contact-title {
+		font-size: 64px;
+		line-height: normal;
+	}
+
+	.contact-description {
+		position: absolute;
+		top: 105px;
+		max-width: none;
+		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.contact-email {
+		position: absolute;
+		top: 199px;
+		font-size: 64px;
+		color: var(--color-royal-blue);
+	}
+
+	.contact-copyright {
+		position: absolute;
+		top: 314px;
+		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.home-page .hero {
+		height: 492px;
+	}
+
+	.home-page .hero-title {
+		top: 71px;
+		width: 666px;
+		height: 280px;
+		font-size: 200px;
+	}
+
+	.home-page .hero-line {
+		top: 321px;
+		height: 69px;
+	}
+
+	.home-page .hero-description {
+		top: 336px;
+	}
+
+	.home-page .projects {
+		margin-top: 0;
+	}
+
+	.home-page .skills {
+		margin-top: 83px;
+		padding-bottom: 75px;
+	}
+
+	.home-page .skills-title {
+		margin-bottom: 15.5px;
+	}
+
+	.home-page .skills-grid {
+		grid-template-rows: repeat(2, 136px);
+		row-gap: 37px;
+	}
+
+	.home-page .skills-grid img {
+		max-width: 190px;
+		max-height: none;
+	}
+
+	.home-page .skills-grid img:nth-child(2),
+	.home-page .skills-grid img:nth-child(5) {
+		transform: translateY(-0.5px);
+	}
+
+	.home-page .skills-grid img:nth-child(4) {
+		justify-self: start;
+		margin-left: 105px;
+	}
+
+	.home-page .navigation-buttons {
+		position: relative;
+		left: 2px;
+		grid-template-columns: repeat(2, 295px);
+		column-gap: 230px;
+		row-gap: 101px;
+		margin-top: 0;
+		padding-bottom: 101px;
+	}
+
+	.home-page .navigation-button {
+		width: 295px;
+		height: 116px;
+		box-shadow: 0 8px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.home-page .navigation-button:hover {
+		box-shadow: 0 10px 8px rgba(0, 0, 0, 0.35);
 	}
 }

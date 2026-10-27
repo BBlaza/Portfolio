@@ -16,18 +16,11 @@
 	<script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="home-page">
 	<div class="main-page">
 
 		<!-- Navigation Bar -->
-		<nav class="navbar" aria-label="Main navigation">
-			<div class="nav-content">
-				<a href="index.html" class="active" aria-current="page">Home</a>
-				<a href="games.html">Games</a>
-				<a href="design.html">Design</a>
-				<a href="experiences.html">Experience</a>
-			</div>
-		</nav>
+		<nav class="navbar" aria-label="Main navigation" data-navigation="index.html"></nav>
 
 		<main class="content-background">
 
@@ -36,15 +29,7 @@
 				<div class="hero-content">
 					<h1 class="hero-title">Justin Jia</h1>
 
-					<svg
-						class="hero-line"
-						viewBox="0 0 1074 66"
-						aria-hidden="true"
-						preserveAspectRatio="none">
-						<path
-							d="M0 64.5H105.5L190.5 1.5H1074"
-						/>
-					</svg>
+					<img class="hero-line" src="assets/images/games/line.svg" width="1074" height="69" alt="" aria-hidden="true">
 
 					<p class="hero-description">
 						Computer science student from University
@@ -68,7 +53,7 @@
 				</a>
 
 				<a class="project-tab" href="projects/tippys-cafe.html" aria-labelledby="tippys-cafe-card-title">
-					<h2 class="project-tab-title" id="tippys-cafe-card-title">Tippy's Cafe</h2>
+					<h2 class="project-tab-title" id="tippys-cafe-card-title">Tippy’s Cafe</h2>
 					<img class="project-tab-preview" src="assets/images/TippysCafe.png" alt="Tippy's Cafe game screenshot">
 				</a>
 			</section>
@@ -99,25 +84,7 @@
 	</div>
 
 	<!-- Contact Footer -->
-	<footer class="contact" id="contact">
-		<div class="contact-content">
-			<h2 class="contact-title">Contact</h2>
-
-			<p class="contact-description">
-				I'm open to Gameplay Engineer, Front-end Developer,
-				Game Developer Intern, and Technical Designer Intern.
-				Email is the fastest way to reach me.
-			</p>
-
-			<a class="contact-email" href="mailto:jjia@ufl.edu">
-				jjia@ufl.edu
-			</a>
-
-			<p class="contact-copyright">
-				©2026 Juncheng Jia
-			</p>
-		</div>
-	</footer>
+	<footer class="contact" id="contact" data-contact></footer>
 
 </body>
 </html>
