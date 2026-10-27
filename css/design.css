@@ -1,0 +1,201 @@
+/* Design portfolio layout; global navigation, tokens, and footer remain shared. */
+.design-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: var(--project-image-radius);
+}
+
+.design-description {
+	margin: 0;
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.design-map-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 50px 20px;
+	align-items: start;
+}
+
+@media (min-width: 1101px) {
+	.design-page .main-page {
+		background-size: 100% calc(100% + 418px);
+	}
+
+	.design-content {
+		height: 1546px;
+	}
+
+	.design-content::before {
+		inset: auto;
+		left: calc((100% - var(--desktop-design-width)) / 2 + 280px);
+		top: 1167px;
+		width: 1835.1px;
+		height: 1513px;
+		background: url("../assets/images/projects/tippys-cafe/glow.svg") no-repeat;
+	}
+
+	.design-entry {
+		position: absolute;
+		left: calc((100% - var(--desktop-design-width)) / 2);
+		width: var(--desktop-design-width);
+	}
+
+	.design-entry > .design-image,
+	.design-entry > .design-description,
+	.design-map-grid {
+		position: absolute;
+	}
+
+	.design-restaurant {
+		top: 70px;
+	}
+
+	.design-restaurant > .design-image {
+		left: 205px;
+		width: 505px;
+		height: 277px;
+		object-fit: cover;
+	}
+
+	.design-restaurant .design-description {
+		left: 735px;
+		width: 605px;
+	}
+
+	.design-map {
+		top: 446px;
+	}
+
+	.design-map .design-description {
+		left: 100px;
+		width: var(--project-text-width);
+	}
+
+	.design-map-grid {
+		left: 730px;
+		width: 610px;
+		grid-template-columns: 301px 295px;
+		grid-template-rows: 215px 211px;
+		gap: 50px 14px;
+	}
+
+	.design-map-grid .design-image {
+		object-fit: cover;
+	}
+
+	.design-map-grid .design-image:nth-child(1) {
+		height: 215px;
+	}
+
+	.design-map-grid .design-image:nth-child(2) {
+		margin-top: 3px;
+		height: 211px;
+	}
+
+	.design-map-grid .design-image:nth-child(3) {
+		width: 295px;
+		height: 211px;
+	}
+
+	.design-map-grid .design-image:nth-child(4) {
+		height: 210px;
+	}
+
+	.design-hero {
+		top: 1050px;
+	}
+
+	.design-hero > .design-image {
+		left: 205px;
+		width: var(--project-image-width);
+		height: 286px;
+		object-fit: cover;
+	}
+
+	.design-hero .design-description {
+		left: 730px;
+		width: var(--project-text-width);
+	}
+
+	.design-page .contact-content {
+		position: relative;
+		height: 418px;
+		padding-top: 28px;
+	}
+
+	.design-page .contact-title {
+		font-size: 64px;
+		line-height: normal;
+	}
+
+	.design-page .contact-description {
+		position: absolute;
+		top: 105px;
+		max-width: none;
+		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.design-page .contact-email {
+		position: absolute;
+		top: 199px;
+		font-size: 64px;
+		color: var(--color-royal-blue);
+	}
+
+	.design-page .contact-copyright {
+		position: absolute;
+		top: 314px;
+		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.design-content {
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+		padding: 48px 24px 120px;
+	}
+
+	.design-entry {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 24px;
+		align-items: start;
+	}
+
+	.design-description {
+		font-size: 28px;
+		line-height: 1.3;
+	}
+
+	.design-map-grid {
+		gap: 24px 12px;
+	}
+}
+
+@media (max-width: 600px) {
+	.design-content {
+		gap: 64px;
+		padding: 32px 16px 80px;
+	}
+
+	.design-entry {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.design-description {
+		font-size: 24px;
+	}
+
+	.design-map .design-description {
+		grid-row: 2;
+	}
+}

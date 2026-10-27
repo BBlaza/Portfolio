@@ -1,0 +1,33 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Main navigation" [ref=e3]:
+      - generic [ref=e4]:
+        - link "Home" [ref=e5] [cursor=pointer]:
+          - /url: index.html
+        - link "Games" [ref=e6] [cursor=pointer]:
+          - /url: games.html
+        - link "Design" [ref=e7] [cursor=pointer]:
+          - /url: design.html
+        - link "Experience" [ref=e8] [cursor=pointer]:
+          - /url: experiences.html
+    - main "Design portfolio" [ref=e9]:
+      - region "Restaurant ordering interface":
+        - img "Figma restaurant selection and ordering screens with dining locations, menus, and meal-plan information" [ref=e10]
+        - paragraph [ref=e11]: Redesigned the restaurant selection and ordering flow in Figma, organizing information such as dining locations, prices, wait times, and meal-plan balances to support browsing and comparison.
+      - region "Game map interface states":
+        - paragraph [ref=e12]: Created game-map UI mockups with hover and pressed button states, highlighted points of interest, and detail panels in various states to communicate a step-by-step interaction flow
+        - generic [ref=e13]:
+          - img "Game map overview with highlighted points of interest" [ref=e14]
+          - img "Game map with a hovered navigation button" [ref=e15]
+          - img "Game map with a pressed navigation button" [ref=e16]
+          - img "Game map with an open point-of-interest detail panel" [ref=e17]
+      - region "Game website hero design":
+        - img "Death Rhapsody game website hero with a neon city, purchase button, and platform logos" [ref=e18]
+        - paragraph [ref=e19]: Designed a game website hero section in Photoshop, using hierarchy and contrasting colors to emphasize the key information.
+  - contentinfo [ref=e20]:
+    - generic [ref=e21]:
+      - heading "Contact" [level=2] [ref=e22]
+      - paragraph [ref=e23]: I'm open to Gameplay Engineer, Front-end Developer, Game Developer Intern, and Technical Designer Intern. Email is the fastest way to reach me.
+      - link "jjia@ufl.edu" [ref=e24] [cursor=pointer]:
+        - /url: mailto:jjia@ufl.edu
+      - paragraph [ref=e25]: ©2026 Juncheng Jia
