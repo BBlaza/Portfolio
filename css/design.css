@@ -20,21 +20,8 @@
 }
 
 @media (min-width: 1101px) {
-	.design-page .main-page {
-		background-size: 100% calc(100% + 418px);
-	}
-
 	.design-content {
 		height: 1546px;
-	}
-
-	.design-content::before {
-		inset: auto;
-		left: calc((100% - var(--desktop-design-width)) / 2 + 280px);
-		top: 1167px;
-		width: 1835.1px;
-		height: 1513px;
-		background: url("../assets/images/projects/tippys-cafe/glow.svg") no-repeat;
 	}
 
 	.design-entry {
@@ -118,41 +105,6 @@
 	.design-hero .design-description {
 		left: 730px;
 		width: var(--project-text-width);
-	}
-
-	.design-page .contact-content {
-		position: relative;
-		height: 418px;
-		padding-top: 28px;
-	}
-
-	.design-page .contact-title {
-		font-size: 64px;
-		line-height: normal;
-	}
-
-	.design-page .contact-description {
-		position: absolute;
-		top: 105px;
-		max-width: none;
-		margin: 0;
-		font-size: 32px;
-		line-height: 40px;
-	}
-
-	.design-page .contact-email {
-		position: absolute;
-		top: 199px;
-		font-size: 64px;
-		color: var(--color-royal-blue);
-	}
-
-	.design-page .contact-copyright {
-		position: absolute;
-		top: 314px;
-		margin: 0;
-		font-size: 32px;
-		line-height: 40px;
 	}
 }
 

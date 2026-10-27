@@ -30,13 +30,6 @@
 	overflow: visible;
 }
 
-.project-header-line path {
-	fill: none;
-	stroke: var(--color-warm-gray);
-	stroke-width: 3px;
-	vector-effect: non-scaling-stroke;
-}
-
 /* Project Title */
 .project-title {
 	position: absolute;
@@ -215,6 +208,99 @@
 	}
 }
 
+/* Desktop project frames retain their individual feature spacing. */
+@media (min-width: 1101px) {
+	.sketchpad-page .project-header {
+		height: 579px;
+	}
+
+	.sketchpad-page .project-title {
+		top: 45px;
+		line-height: normal;
+	}
+
+	.sketchpad-page .project-header-line {
+		top: 109.5px;
+		height: 103px;
+	}
+
+	.sketchpad-page .project-subtitle {
+		top: 224px;
+	}
+
+	.sketchpad-page .project-features,
+	.polar-migrate-page .project-features {
+		width: 1030px;
+		gap: 98px;
+		padding-bottom: 185px;
+	}
+
+	.sketchpad-page .project-feature,
+	.polar-migrate-page .project-feature {
+		gap: 20px;
+		align-items: start;
+		min-height: 299px;
+	}
+
+	.sketchpad-page .project-feature:first-child,
+	.polar-migrate-page .project-feature:first-child {
+		min-height: 316px;
+	}
+
+	.sketchpad-page .project-feature-text p,
+	.polar-migrate-page .project-feature-text p {
+		margin: 0;
+	}
+
+	.sketchpad-page .project-feature:first-child .project-feature-text {
+		position: relative;
+		top: 3px;
+		left: 2px;
+	}
+
+	.sketchpad-page .project-feature:first-child .project-feature-image {
+		width: 398px;
+		height: 248px;
+		object-fit: cover;
+		margin-left: 2px;
+	}
+
+	.sketchpad-page .project-feature-reverse .project-feature-image {
+		width: 399px;
+		height: 250px;
+		object-fit: cover;
+	}
+
+	.polar-migrate-page .project-header {
+		height: 627px;
+	}
+
+	.polar-migrate-page .project-title {
+		top: 32px;
+		line-height: normal;
+	}
+
+	.polar-migrate-page .project-header-line {
+		top: 109.5px;
+		height: 103px;
+		left: calc((100% - var(--desktop-design-width)) / 2 - 138px);
+	}
+
+	.polar-migrate-page .project-subtitle {
+		top: 240px;
+		width: 715px;
+	}
+
+	.polar-migrate-page .project-features {
+		gap: 69px;
+		padding-bottom: 163px;
+	}
+
+	.polar-migrate-page .project-feature:first-child .project-feature-image {
+		margin-top: 14px;
+	}
+}
+
 /* ========================================
 	Tippy's Cafe
 ======================================== */
@@ -228,19 +314,6 @@
 }
 
 @media (min-width: 1101px) {
-	.tippys-cafe-page .main-page {
-		background-size: 100% calc(100% + 418px);
-	}
-
-	.tippys-cafe-page .content-background::before {
-		inset: auto;
-		left: calc((100% - var(--desktop-design-width)) / 2 + 385px);
-		top: 1643px;
-		width: 1835.096px;
-		height: 1513px;
-		background: url("../assets/images/projects/tippys-cafe/glow.svg") no-repeat;
-	}
-
 	.tippys-cafe-page .project-header {
 		height: 574px;
 	}
@@ -306,41 +379,6 @@
 
 	.tippys-cafe-page .tippys-trash .project-feature-image {
 		aspect-ratio: 505 / 315;
-	}
-
-	.tippys-cafe-page .contact-content {
-		position: relative;
-		height: 418px;
-		padding: 28px 0 0;
-	}
-
-	.tippys-cafe-page .contact-title {
-		font-size: 64px;
-		line-height: normal;
-	}
-
-	.tippys-cafe-page .contact-description {
-		position: absolute;
-		top: 105px;
-		max-width: none;
-		margin: 0;
-		font-size: 32px;
-		line-height: 40px;
-	}
-
-	.tippys-cafe-page .contact-email {
-		position: absolute;
-		top: 199px;
-		font-size: 64px;
-		color: var(--color-royal-blue);
-	}
-
-	.tippys-cafe-page .contact-copyright {
-		position: absolute;
-		top: 314px;
-		margin: 0;
-		font-size: 32px;
-		line-height: 40px;
 	}
 }
 

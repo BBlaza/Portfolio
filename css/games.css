@@ -1,39 +1,4 @@
 /* Games listing: shared cards and contact markup retain their own page styles. */
-.games-page .project-tab {
-	background-image: none;
-	filter: drop-shadow(10px 30px 5px rgba(0, 0, 0, 0.5));
-}
-
-.games-page .project-tab::before {
-	content: "";
-	position: absolute;
-	inset: 4.98% 0 52.87% 21.25%;
-	border-radius: 15px;
-	background-color: var(--color-warm-gray);
-	z-index: -2;
-}
-
-.games-page .project-tab::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background: url("../assets/images/games/folder.svg") no-repeat center / 100% 100%;
-	z-index: -1;
-}
-
-.games-page .project-tab-title {
-	top: 4.98%;
-	left: 21.25%;
-	width: 78.75%;
-	font-size: 40px;
-	line-height: normal;
-}
-
-.games-page .project-tab-preview {
-	height: auto;
-	aspect-ratio: 2880 / 1800;
-}
-
 .game-description {
 	margin: 0;
 	font-size: 36px;
@@ -46,21 +11,8 @@
 }
 
 @media (min-width: 1101px) {
-	.games-page .main-page {
-		background-size: 100% calc(100% + 418px);
-	}
-
 	.games-content {
 		height: 1845px;
-	}
-
-	.games-content::before {
-		inset: auto;
-		left: calc((100% - var(--desktop-design-width)) / 2 + 282px);
-		top: 1469px;
-		width: 1835.1px;
-		height: 1513px;
-		background: url("../assets/images/projects/tippys-cafe/glow.svg") no-repeat;
 	}
 
 	.game-entry {
@@ -127,41 +79,6 @@
 	.game-entry-3 .game-line {
 		top: 283.5px;
 		left: 520px;
-	}
-
-	.games-page .contact-content {
-		position: relative;
-		height: 418px;
-		padding-top: 28px;
-	}
-
-	.games-page .contact-title {
-		font-size: 64px;
-		line-height: normal;
-	}
-
-	.games-page .contact-description {
-		position: absolute;
-		top: 105px;
-		max-width: none;
-		margin: 0;
-		font-size: 32px;
-		line-height: 40px;
-	}
-
-	.games-page .contact-email {
-		position: absolute;
-		top: 199px;
-		font-size: 64px;
-		color: var(--color-royal-blue);
-	}
-
-	.games-page .contact-copyright {
-		position: absolute;
-		top: 314px;
-		margin: 0;
-		font-size: 32px;
-		line-height: 40px;
 	}
 }
 
