@@ -12,29 +12,17 @@
 
 	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="../css/projects.css">
+	<script src="../script.js" defer></script>
 </head>
 
 <body>
 	<main class="main-page content-background project-page polar-migrate-page">
         <!-- Navigation Bar -->
-        <nav class="navbar" aria-label="Main navigation">
-            <div class="nav-content">
-                <a href="../index.html">Home</a>
-                <a href="../games.html" class="active">Games</a>
-                <a href="../design.html">Design</a>
-                <a href="../experiences.html">Experience</a>
-            </div>
-        </nav>
+		<nav class="navbar" aria-label="Main navigation" data-navigation="games.html"></nav>
 
         <!-- Project Header -->
         <header class="project-header">
-            <svg
-                class="project-header-line"
-                viewBox="0 0 1163 100"
-                aria-hidden="true"
-            >
-                <path d="M0 0 H236 L337 100 H1163" />
-            </svg>
+			<img class="project-header-line" src="../assets/images/projects/tippys-cafe/header-line.svg" width="1163" height="103" alt="" aria-hidden="true">
 
             <h1 class="project-title">Polar Migrate!</h1>
 
@@ -90,24 +78,6 @@
 	</main>
 
 	<!-- Shared Footer -->
-	<footer class="contact" id="contact">
-		<div class="contact-content">
-			<h2 class="contact-title">Contact</h2>
-
-			<p class="contact-description">
-				I'm open to Gameplay Engineer, Front-end Developer,
-				Game Developer Intern, and Technical Designer Intern.
-				Email is the fastest way to reach me.
-			</p>
-
-			<a class="contact-email" href="mailto:jjia@ufl.edu">
-				jjia@ufl.edu
-			</a>
-
-			<p class="contact-copyright">
-				©2026 Juncheng Jia
-			</p>
-		</div>
-	</footer>
+	<footer class="contact" id="contact" data-contact></footer>
 </body>
 </html>
